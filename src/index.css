@@ -8,35 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Fintech Color Palette */
+    --pure-white: 0 0% 100%;
+    --dark-slate: 245 17% 26%;
+    --charcoal: 195 14% 20%;
+    --ghost-white: 240 33% 98%;
+    --platinum: 225 14% 95%;
+    --silver-mist: 222 11% 91%;
+    --ocean-blue: 205 100% 32%;
+    --navy-blue: 205 100% 26%;
+    
+    /* Semantic Design System */
+    --background: var(--pure-white);
+    --foreground: var(--dark-slate);
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: var(--pure-white);
+    --card-foreground: var(--dark-slate);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: var(--pure-white);
+    --popover-foreground: var(--dark-slate);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: var(--ocean-blue);
+    --primary-foreground: var(--pure-white);
+    --primary-hover: var(--navy-blue);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: var(--platinum);
+    --secondary-foreground: var(--dark-slate);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: var(--silver-mist);
+    --muted-foreground: var(--charcoal);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: var(--ghost-white);
+    --accent-foreground: var(--dark-slate);
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: var(--pure-white);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: var(--silver-mist);
+    --input: var(--silver-mist);
+    --ring: var(--ocean-blue);
 
-    --radius: 0.5rem;
+    /* Custom gradients and effects */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--ocean-blue)), hsl(var(--navy-blue)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--ghost-white)), hsl(var(--platinum)));
+    --shadow-elegant: 0 4px 24px -4px hsl(var(--dark-slate) / 0.1);
+    --shadow-card: 0 2px 12px -2px hsl(var(--dark-slate) / 0.08);
+    
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
