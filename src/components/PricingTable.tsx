@@ -104,11 +104,11 @@ const PricingTable = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid lg:grid-cols-3 gap-8 mb-16">
+      <div className="grid lg:grid-cols-3 gap-8 mb-16 items-stretch">
         {plans.map((plan, index) => (
           <Card 
             key={plan.name} 
-            className={`relative overflow-hidden shadow-card transition-all duration-300 hover:shadow-elegant ${
+            className={`relative overflow-hidden shadow-card transition-all duration-300 hover:shadow-elegant flex flex-col h-full ${
               plan.popular ? 'ring-2 ring-primary transform scale-105' : ''
             }`}
           >
@@ -118,7 +118,7 @@ const PricingTable = () => {
               </div>
             )}
             
-            <CardContent className={`p-8 ${plan.popular ? 'pt-12' : ''}`}>
+            <CardContent className={`p-8 flex flex-col h-full ${plan.popular ? 'pt-12' : ''}`}>
               {/* Plan Header */}
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 bg-accent rounded-lg">
@@ -147,7 +147,7 @@ const PricingTable = () => {
               </Button>
 
               {/* Features List */}
-              <div className="space-y-3">
+              <div className="space-y-3 flex-grow">
                 <h4 className="font-semibold text-foreground mb-4">What's included:</h4>
                 {plan.features.map((feature, idx) => (
                   <div key={idx} className="flex items-start gap-3">
