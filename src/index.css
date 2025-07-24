@@ -8,13 +8,15 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Fintech Color Palette */
+    /* Updated Fintech Color Palette */
     --pure-white: 0 0% 100%;
     --dark-slate: 245 17% 26%;
     --charcoal: 195 14% 20%;
     --ghost-white: 240 33% 98%;
     --platinum: 225 14% 95%;
     --silver-mist: 222 11% 91%;
+    --dark-green: 175 100% 9%;      /* #002D29 - Main Circle */
+    --teal-green: 177 36% 42%;      /* #43928D - Accent */
     --ocean-blue: 205 100% 32%;
     --navy-blue: 205 100% 26%;
     
@@ -28,9 +30,9 @@ All colors MUST be HSL.
     --popover: var(--pure-white);
     --popover-foreground: var(--dark-slate);
 
-    --primary: var(--ocean-blue);
+    --primary: var(--dark-green);
     --primary-foreground: var(--pure-white);
-    --primary-hover: var(--navy-blue);
+    --primary-hover: var(--teal-green);
 
     --secondary: var(--platinum);
     --secondary-foreground: var(--dark-slate);
@@ -46,13 +48,14 @@ All colors MUST be HSL.
 
     --border: var(--silver-mist);
     --input: var(--silver-mist);
-    --ring: var(--ocean-blue);
+    --ring: var(--dark-green);
 
-    /* Custom gradients and effects */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--ocean-blue)), hsl(var(--navy-blue)));
+    /* Custom gradients and effects with new green/teal colors */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--dark-green)), hsl(var(--teal-green)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--ghost-white)), hsl(var(--platinum)));
-    --shadow-elegant: 0 4px 24px -4px hsl(var(--dark-slate) / 0.1);
-    --shadow-card: 0 2px 12px -2px hsl(var(--dark-slate) / 0.08);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--teal-green)), hsl(var(--dark-green)));
+    --shadow-elegant: 0 4px 24px -4px hsl(var(--dark-green) / 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(var(--dark-green) / 0.1);
     
     --radius: 0.75rem;
 
