@@ -133,8 +133,7 @@ const PricingTable = () => {
               {/* Pricing */}
               <div className="mb-6">
                 <div className="text-3xl font-bold text-foreground mb-2">{plan.price}</div>
-                <div className="text-muted-foreground text-sm mb-1">{plan.transactions}</div>
-                <div className="text-muted-foreground text-sm mb-1">{plan.perTransaction}</div>
+                <div className="text-muted-foreground text-sm mb-1">{plan.transactions} ({plan.perTransaction})</div>
                 <div className="text-muted-foreground text-xs">{plan.additionalRate}</div>
               </div>
 
